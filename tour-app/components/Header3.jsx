@@ -37,7 +37,7 @@ const Header3 = () => {
       <div className="flex mx-20 my-5 font-bold">
           <button
             type="submit"
-            className=" h-16 px-3 py-2 hover:cursor-pointer text-white mr-5"
+            className="  h-16 px-3 py-2 hover:cursor-pointer text-white mr-5"
           >
             Continue your search
           </button>

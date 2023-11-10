@@ -27,21 +27,25 @@ const Header1 = () => {
   };
   return (
     <div className=" flex justify-between border-b-2 border-gray-300 items-center h-24 px-10">
-      <Image
+      {/* <Image
         src={"/logo.png"}
         alt="logo"
         width={200}
         height={200}
         className=" w-28 h-28 "
-      />
+      /> */}
+      <h2 className="text-5xl font-bold mr-5  text-red-600">PG</h2>
       <div className=" h-full flex">
         <Block title={"Become a member"} para={"Additional 0% off on stays."} />
         <Block
-          title={"OYO for business"}
+          title={"PG for business"}
           para={"Trusted by 5000 corporates."}
         />
         <Block title={"List your property"} para={"Start earning in 30 min."} />
-        <Block title={"987654321"} para={"Call us to book now."} />
+        <a href="tel:+918777093413">
+        <Block title={"8777093413"} para={"Call us to book now."} />
+        </a>
+        
         <div className="flex items-center px-3 ">
           <Image
             src={"/demo.svg"}

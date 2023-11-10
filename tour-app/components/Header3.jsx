@@ -21,7 +21,7 @@ const Header3 = () => {
               setCity(e.target.value);
             }}
           />
-          <input
+          {/* <input
             type="date"
             placeholder="Search..."
             className="  h-16 outline-none px-3 text-lg border-r-2 border-gray-400 col-span-1"
@@ -30,7 +30,7 @@ const Header3 = () => {
             type="date"
             placeholder="Search..."
             className=" h-16 outline-none px-3 text-lg col-span-1"
-          />
+          /> */}
 
           <button
             type="submit"

@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Link from "next/link";
 
 
 const Login = () => {
@@ -13,7 +14,11 @@ const Login = () => {
       </Head>
       <div className="flex h-screen justify-center items-center relative bg-login-background bg-no-repeat bg-cover opacity-85">
         <div className=" absolute w-full top-10 px-20 flex items-center text-white">
-          <h2 className="text-5xl font-bold mr-5">OYO</h2>
+        <Link href={'/'}>
+        <h2 className="text-5xl font-bold mr-5">OYO</h2>
+
+        </Link>
+          
           <p className=" font-bold text-2xl  ">
             Hotels and homes across 800 cities, 24+ countries
           </p>
@@ -64,8 +69,10 @@ const Login = () => {
                 type="submit"
                 className=" w-96 h-14 text-lg font-bold bg-red-500 hover:cursor-pointer hover:bg-red-600 text-white my-5 rounded-lg"
                 // onClick={login ? handleLogin : handleSignup}
+                
 
               >
+              Sign Up
                 {/* {login ? "Login " : " Sign Up"} */}
               </button>
               <p className=" my-1 text-xl">

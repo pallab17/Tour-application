@@ -16,7 +16,7 @@ const Home = () => {
         </title>
         </Head>
      <Header1/>
-     {/* <Header2/> */}
+     <Header2/>
      <Header3/>
      <div className="mx-20">
         <div className=" my-14">

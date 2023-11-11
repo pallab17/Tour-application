@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const URI = "mongodb+srv://pallab:pallab@cluster0.m9gae.mongodb.net/PG";
+// const URI = "";
+const URI = process.env.MONGO_URI;
 
 const connectDB = async () => {
   //let cachedDB = null;

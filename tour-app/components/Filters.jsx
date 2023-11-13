@@ -15,6 +15,7 @@ const Filters = ({
   const fetchFacilities = async () => {
     try {
       const { data } = await axios.get(`/api/facilities`);
+      console.log(data);
       if (data?.facilities) {
         setList(data.facilities);
       }
@@ -64,17 +65,18 @@ const Filters = ({
         </div>
         <div className=" my-10 ">
           <h3 className=" text-xl font-bold my-3">Filter by Facilities : </h3>
+
           {list?.map((e) => {
             return (
-              <p key={e} className="grid grid-cols-4 my-3">
+              <p key={e[0]} className="grid grid-cols-4 my-3">
                 <label htmlFor="checkbox" className=" col-span-2">
-                  {e}{" "}
+                  {e[1]}
                 </label>
                 <input
                   type="checkbox"
                   name="ckeckbox"
                   id="checkbox"
-                  value={e}
+                  value={e[1]}
                   className=" w-5 h-5 ml-3 col-span-1"
                   onChange={handleCheckList}
                 />

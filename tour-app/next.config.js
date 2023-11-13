@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
+      "www.google.com",
+      "encrypted-tbn0.gstatic.com",
+      "unsplash.com",
       "plus.unsplash.com",
       "images.unsplash.com",
       "thumbs.dreamstime.com",
@@ -15,4 +18,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
